@@ -1,0 +1,132 @@
+# Logs and databases #
+######################
+*.log
+download/
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+
+# Editor Files #
+################
+*~
+*.swp
+
+# Gradle Files #
+################
+.gradle
+.gradletasknamecache
+.m2
+
+# Build output directies
+target/
+build/
+
+# IntelliJ specific files/directories
+out
+.idea
+*.ipr
+*.iws
+*.iml
+atlassian-ide-plugin.xml
+
+*.class
+logs
+
+# sbt
+.idea
+.idea_modules
+.classpath
+.project
+.settings
+RUNNING_PID
+releases
+
+
+# Scala build
+*.cache
+/.nb-gradle/private/
+.Rproj.user
+
+# R Studio
+.Rhistory
+
+metastore_db
+*.Rproj
+
+
+# node.js
+node_modules
+dist
+
+package-lock.json
+
+# my temp
+mytemp
+
+
+josm-macosx
+geoserver-2.14.2
+
+build
+
+# webgl
+luma.gl-6.4.1
+math.gl-2.3.0
+deck.gl-6.4.5
+
+# canvas
+vis-4.21.0
+
+# ai
+1930OS_CodeBundle
+9781783281930_code.zip
+
+matplotlib
+9781849513265_code
+
+__pycache__
+.ipynb_checkpoints
+
+scikit-learn-0.20.3
+
+clickhouse-driver-0.0.18
+
+
+research/ai/tensorfow/hello/tmp/data
+
+cmake-build-debug
+C_in_a_nutshell_example_code
+CMakeFiles
+glibc-2.29
+
+
+PyMOTW-3-1.0.tar.gz
+PyMOTW-3-1.0
+
+pydata-book-2nd-edition.zip
+pydata-book-2nd-edition
+
+
+jupyter_python3_7
+
+python3_7_rpms
+
+dependency-reduced-pom
+
+
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+
+*.egg-info
+
+
+.git_aws
