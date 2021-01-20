@@ -130,3 +130,5 @@ dependency-reduced-pom
 
 
 .git_aws
+
+.vscode

@@ -1,4 +1,8 @@
 import ast
+import ujson
+from happy_python_utils import (
+    happy_json_utils
+)
 
 def dump(node, annotate_fields=True, include_attributes=False, indent=' '):
     """
@@ -43,9 +47,52 @@ def dump(node, annotate_fields=True, include_attributes=False, indent=' '):
     return _format(node)
 
 
-def parseprint(source, filename='<unkown>', mode='exec', **kwargs):
+def to_json_str(node):
+    if not isinstance(node, ast.AST):
+        raise TypeError('expected AST, got %r' % node.__class__.__name__)
+
+    def _iter_fields(node):
+        for field in node._fields:
+            try:
+                yield field, getattr(node, field)
+            except AttributeError:
+                pass
+
+
+    def _format(node):
+        if isinstance(node, ast.AST):
+            fields = [('_PyType', _format(node.__class__.__name__))]
+            fields += [
+                (a, _format(b)) for a, b in _iter_fields(node)
+            ]
+
+            return '{ %s }' % ', '.join(
+                ('"%s": %s' % field for field in fields)
+            )
+
+        if isinstance(node, list):
+            return '[ %s ]' % ', '.join(
+                [_format(x) for x in node]
+            )
+
+        return ujson.dumps(node)
+
+
+    return _format(node)
+
+
+
+
+def parse_print(source, filename='<unkown>', mode='exec', **kwargs):
     """
     Parse the source and pretty-print the AST.
     """
     node = ast.parse(source, filename, mode=mode)
     print(dump(node, **kwargs))
+
+
+def json_print(source, filename='<unkown>', mode='exec', **kwargs):
+    node = ast.parse(source, filename, mode=mode)
+    happy_json_utils.pretty_print({
+        'data': ujson.loads(to_json_str(node))
+    })
