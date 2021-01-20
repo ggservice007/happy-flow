@@ -1,0 +1,23 @@
+{
+  "name": "jupyter_html_resource_server",
+  "version": "1.0.10",
+  "description": "Jupyter Html Resource Server",
+  "main": "./app.js",
+  "private": true,
+  "repository": "happy_repository",
+  "dependencies": {
+    "@happy.node/koa": "^1.0.0",
+    "@happy.node/utils": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "babel-plugin-transform-export-extensions": "^6.22.0"
+  },
+  "scripts": {
+    "start-dev": "babel-node ./app.js",
+    "start": "pm2 start --interpreter babel-node ./app.js --name jupyter-html-resource-server"
+  }
+}
