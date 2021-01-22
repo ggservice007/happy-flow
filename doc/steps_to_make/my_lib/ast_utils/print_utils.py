@@ -96,3 +96,9 @@ def json_print(source, filename='<unkown>', mode='exec', **kwargs):
     happy_json_utils.pretty_print({
         'data': ujson.loads(to_json_str(node))
     })
+
+
+def print_separator(length=80):
+    print('')
+    print('=' * length)
+    print('')
