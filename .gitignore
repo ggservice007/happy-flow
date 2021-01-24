@@ -1,134 +1,178 @@
-# Logs and databases #
-######################
-*.log
-download/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# OS generated files #
-######################
-.DS_Store*
-ehthumbs.db
-Thumbs.db
+# C extensions
+*.so
 
-# Editor Files #
-################
-*~
-*.swp
-
-# Gradle Files #
-################
-.gradle
-.gradletasknamecache
-.m2
-
-# Build output directies
-target/
+# Distribution / packaging
+.Python
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# IntelliJ specific files/directories
-out
-.idea
-*.ipr
-*.iws
-*.iml
-atlassian-ide-plugin.xml
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-*.class
-logs
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# sbt
-.idea
-.idea_modules
-.classpath
-.project
-.settings
-RUNNING_PID
-releases
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
 
+# Translations
+*.mo
+*.pot
 
-# Scala build
-*.cache
-/.nb-gradle/private/
-.Rproj.user
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
 
-# R Studio
-.Rhistory
+# Flask stuff:
+instance/
+.webassets-cache
 
-metastore_db
-*.Rproj
+# Scrapy stuff:
+.scrapy
 
+# Sphinx documentation
+docs/_build/
 
-# node.js
-node_modules
-dist
+# PyBuilder
+target/
 
-package-lock.json
-
-# my temp
-mytemp
-
-
-josm-macosx
-geoserver-2.14.2
-
-build
-
-# webgl
-luma.gl-6.4.1
-math.gl-2.3.0
-deck.gl-6.4.5
-
-# canvas
-vis-4.21.0
-
-# ai
-1930OS_CodeBundle
-9781783281930_code.zip
-
-matplotlib
-9781849513265_code
-
-__pycache__
+# Jupyter Notebook
 .ipynb_checkpoints
 
-scikit-learn-0.20.3
+# pyenv
+.python-version
 
-clickhouse-driver-0.0.18
+# celery beat schedule file
+celerybeat-schedule
 
+# SageMath parsed files
+*.sage.py
 
-research/ai/tensorfow/hello/tmp/data
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-cmake-build-debug
-C_in_a_nutshell_example_code
-CMakeFiles
-glibc-2.29
+# Spyder project settings
+.spyderproject
+.spyproject
 
+# Rope project settings
+.ropeproject
 
-PyMOTW-3-1.0.tar.gz
-PyMOTW-3-1.0
+# mkdocs documentation
+/site
 
-pydata-book-2nd-edition.zip
-pydata-book-2nd-edition
+# mypy
+.mypy_cache/
 
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-jupyter_python3_7
+# User-specific stuff
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+*.DS_Store
 
-python3_7_rpms
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
 
-dependency-reduced-pom
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
 
+# vscode settings
+.vscode/
 
-# vscode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
+# CMake
+cmake-build-*/
 
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
 
-*.egg-info
+# File-based project format
+*.iws
 
+# IntelliJ
+out/
 
-.git_aws
+# mpeltonen/sbt-idea plugin
+.idea_modules/
 
-.vscode
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Cscope and Tags
+tags
+cscope.files
+cscope.out
+
+# PYTest Benchmarks
+.benchmarks/
+
+# Dask workspace
+dask-worker-space/
+node_modules
+
+# Asv stuff
+asv_bench/.asv/
+asv_bench/modin/
