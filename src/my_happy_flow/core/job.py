@@ -18,7 +18,7 @@ from typing import (
 
 class Job:
     """
-    Abstract class to be derived for jobs. It provides the `run()` method to execute 
+    Abstract class to be derived for jobs. It provides the `run()` method to execute
     a collection of dependent tasks(ray.remote) by using the ray.get method.
 
     Args:
@@ -48,6 +48,3 @@ class Job:
     ) -> Any:
         run_method_source_code: str = inspect.getsource(self.run)
         return run_method_source_code
-        
-
-    

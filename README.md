@@ -29,7 +29,7 @@ python:  3.7.7
 
 ## install
 ```shell
-python3.7 -m pip install -U my-happy-flow
+python3.7 -m pip install -i https://pypi.org/simple/ -U my-happy-flow
 ```
 
 ## dependency
@@ -37,4 +37,12 @@ python3.7 -m pip install -U my-happy-flow
 ### graphviz
 ```shell
 yum install python-devel graphviz-devel
+```
+
+
+## run
+### step 1
+start ray
+```shell
+ray start --head --port 8266 --dashboard-host 0.0.0.0 --metrics-export-port=8380
 ```
